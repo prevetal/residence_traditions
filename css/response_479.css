@@ -1,0 +1,559 @@
+@media (max-width: 479px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 12px;
+        --font_size_title: 36px;
+    }
+
+
+    .block
+    {
+        margin-bottom: 40px;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__content > .f-button.is-close-btn,
+    .is-compact .fancybox__content > .f-button.is-close-btn
+    {
+        top: 12px;
+        right: 12px;
+
+        --f-button-width: 24px;
+        --f-button-height: 23px;
+        --f-button-svg-width: 24px;
+        --f-button-svg-height: 23px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .cont
+    {
+        height: 77px;
+    }
+
+
+
+    header .logo
+    {
+        width: 120px;
+        height: 45px;
+    }
+
+
+    header .logo img
+    {
+        width: 120px;
+    }
+
+
+
+    header .menu_btn .icon
+    {
+        width: 21px;
+        height: 19px;
+    }
+
+
+
+    header .search .btn .icon
+    {
+        width: 22px;
+        height: 21px;
+    }
+
+
+    header .search .form.active .close_btn
+    {
+        right: 112px;
+    }
+
+
+    header .search .form .submit_btn
+    {
+        width: 92px;
+    }
+
+
+    header .search .tips
+    {
+        padding: 12px;
+    }
+
+
+    header .search .tips .product .thumb + *
+    {
+        width: calc(100% - 108px);
+
+        gap: 16px;
+    }
+
+
+    header .search .tips .product .price
+    {
+        font-size: 16px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        gap: 20px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .label
+    {
+        font-size: 12px;
+
+        margin-bottom: 10px;
+    }
+
+
+    .form .input
+    {
+        font-size: 12px;
+    }
+
+
+    .form .contacts_methods .field label
+    {
+        font-size: 12px;
+    }
+
+
+    .form .checkbox .price
+    {
+        font-size: 20px;
+    }
+
+
+    .form .checkbox .exp
+    {
+        font-size: 12px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block .video_link .thumb img
+    {
+        height: 200px;
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .head .sort
+    {
+        width: 100%;
+    }
+
+
+
+    .products .mob_inline > *,
+    .products .mob_inline > *.small
+    {
+        width: 150px;
+    }
+
+
+    .products .product .buy_btn
+    {
+        top: 10px;
+        right: 10px;
+
+        width: 28px;
+        height: 28px;
+    }
+
+
+    .products .product .buy_btn .icon
+    {
+        width: 16px;
+        height: 16px;
+    }
+
+
+    .products .product .thumb
+    {
+        border-radius: 10px;
+    }
+
+
+    .products .mob_inline .product .thumb
+    {
+        margin-bottom: 10px;
+    }
+
+
+    .products .product .name
+    {
+        padding: 0 20px;
+    }
+
+
+    .products .product .price
+    {
+        font-size: 14px;
+        line-height: 100%;
+    }
+
+
+    .products .product .price .currency:after
+    {
+        left: -1px;
+
+        width: 4px;
+
+        background: currentColor;
+    }
+
+
+
+    /*--------------------
+        Master classes
+    --------------------*/
+    .master_classes .item .date .day
+    {
+        font-size: 24px;
+    }
+
+
+    .master_classes .item .desc
+    {
+        font-size: var(--font_size);
+    }
+
+
+
+    /*--------------------
+        Brands gallery
+    --------------------*/
+    .brands_gallery .row
+    {
+        margin-left: 0;
+    }
+
+
+    .brands_gallery .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .brands_gallery .item
+    {
+        text-align: center;
+    }
+
+
+    .brands_gallery .item .icon
+    {
+        height: 56px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .map
+    {
+        height: 360px;
+    }
+
+
+
+    /*--------------
+        Checkout
+    --------------*/
+    .checkout .product .info,
+    .checkout .prices .val
+    {
+        font-size: 16px;
+    }
+
+
+
+    /*---------------
+        Cart info
+    ---------------*/
+    .cart_info .product .thumb
+    {
+        width: 93px;
+        height: 93px;
+    }
+
+
+    .cart_info .product .info
+    {
+        width: calc(100% - 113px);
+    }
+
+
+    .cart_info .product .name
+    {
+        font-size: 12px;
+    }
+
+
+    .cart_info .product .desc
+    {
+        margin-top: 10px;
+    }
+
+
+    .cart_info .product .price
+    {
+        font-size: 12px;
+
+        margin-top: 14px;
+    }
+
+
+    .cart_info .product .amount
+    {
+        width: 93px;
+    }
+
+
+    .cart_info .product .amount .input
+    {
+        height: 22px;
+    }
+
+
+    .cart_info .product .amount .btn
+    {
+        left: 5px;
+
+        width: 22px;
+    }
+
+    .cart_info .product .amount .btn.plus
+    {
+        right: 5px;
+    }
+
+
+    .cart_info .product .amount .btn:before
+    {
+        width: 9px;
+    }
+
+    .cart_info .product .amount .btn:after
+    {
+        height: 9px;
+    }
+
+
+    .cart_info .product .remove_btn
+    {
+        margin-top: 15px;
+        margin-left: 0;
+    }
+
+
+
+    .cart_info .total_info .sticky
+    {
+        padding: 19px;
+    }
+
+
+    .cart_info .total_info .products_price .val
+    {
+        font-size: 16px;
+    }
+
+
+    .cart_info .total_info .total_price
+    {
+        margin-top: 12px;
+    }
+
+
+    .cart_info .total_info .total_price .val
+    {
+        font-size: 24px;
+    }
+
+
+    .cart_info .total_info .total_price .currency:after
+    {
+        bottom: 6px;
+        left: -2px;
+
+        width: 6px;
+    }
+
+
+    .cart_info .total_info .link
+    {
+        margin-top: 16px;
+    }
+
+
+
+    /*-------------
+        MC info
+    -------------*/
+    .mc_info .images .image
+    {
+        border-radius: 10px;
+    }
+
+
+    .mc_info .data
+    {
+        gap: 24px;
+    }
+
+
+    .mc_info .mc_name
+    {
+        font-size: 36px;
+    }
+
+
+
+    /*--------------------
+        Products small
+    --------------------*/
+    .products_small .row > *
+    {
+        width: 150px;
+    }
+
+
+    .products_small .product .thumb
+    {
+        margin-bottom: 10px;
+
+        border-radius: 10px;
+    }
+
+
+    .products_small .product .name
+    {
+        padding: 0 20px;
+    }
+
+
+    .products_small .product .price
+    {
+        font-size: 14px;
+        line-height: 100%;
+
+        margin-top: 8px;
+    }
+
+
+    .products_small .product .price .currency:after
+    {
+        left: -1px;
+
+        width: 4px;
+
+        background: currentColor;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .product_name
+    {
+        font-size: 40px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .logo img
+    {
+        width: 140px;
+    }
+
+
+
+    footer .info
+    {
+        margin-top: 30px;
+
+        gap: 12px;
+    }
+
+
+
+    footer .links .items
+    {
+        gap: 12px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal
+    {
+        padding: 38px 22px 22px;
+    }
+
+
+    .modal_title
+    {
+        font-size: 44px;
+    }
+
+
+    .modal .form
+    {
+        margin-top: 20px;
+    }
+
+
+
+    /*---------------------
+        PopUp - Success
+    ---------------------*/
+    .modal.success
+    {
+        padding: 38px 22px 22px;
+    }
+
+
+    .modal.success .desc br
+    {
+        display: none;
+    }
+}

@@ -1,0 +1,782 @@
+@media print,
+(max-width: 1023px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 15px;
+        --font_size_title: 48px;
+    }
+
+
+
+    .block
+    {
+        margin-bottom: 80px;
+    }
+
+    .block.middle_m
+    {
+        margin-bottom: 60px;
+    }
+
+    .block.small_m
+    {
+        margin-bottom: 40px;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 24px;
+    }
+
+
+    .fancybox__content > .f-button.is-close-btn,
+    .is-compact .fancybox__content > .f-button.is-close-btn
+    {
+        --f-button-width: 28px;
+        --f-button-height: 27px;
+        --f-button-svg-width: 28px;
+        --f-button-svg-height: 27px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .cont
+    {
+        height: 100px;
+    }
+
+
+
+    header .logo
+    {
+        width: 160px;
+        height: 60px;
+    }
+
+
+    header .logo img
+    {
+        width: 160px;
+    }
+
+
+
+    header .search .mini_modal
+    {
+        width: calc(100vw - 164px);
+        margin-right: 24px;
+    }
+
+
+
+    header .cart,
+    header .callback_btn
+    {
+        display: none;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        margin-bottom: 40px;
+        padding-top: 40px;
+    }
+
+
+    .page_head .cont
+    {
+        gap: 40px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 32px;
+
+        gap: 32px;
+    }
+
+
+    .block_head.big_m
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .block_head .title
+    {
+        line-height: 100%;
+    }
+
+
+    .block_head .title a
+    {
+        padding: 0;
+
+        border: none;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .input
+    {
+        height: 54px;
+    }
+
+
+    .form .contacts_methods .field label div
+    {
+        height: 54px;
+    }
+
+
+    .form .checkbox .price
+    {
+        font-size: 24px;
+    }
+
+
+    .form .submit_btn
+    {
+        height: 54px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block h2
+    {
+        font-size: 20px;
+
+        margin-bottom: 40px !important;
+    }
+
+
+    .text_block * + h2
+    {
+        margin-top: 40px;
+    }
+
+
+    .text_block .video_link
+    {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+
+    .text_block .video_link .thumb img
+    {
+        height: 300px;
+    }
+
+
+    .text_block .video_link .thumb .icon
+    {
+        width: 80px;
+        height: 85px;
+    }
+
+
+    .text_block .columns
+    {
+        column-gap: 0;
+        column-count: 1;
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .head
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .products .categories
+    {
+        flex-wrap: nowrap;
+
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+
+    .products .categories > *
+    {
+        width: 100%;
+    }
+
+
+    .products .categories a
+    {
+        width: 100%;
+    }
+
+
+
+    .products .mob_inline
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        margin: 0 -24px;
+        padding: 0 24px;
+
+        white-space: nowrap;
+
+        scroll-padding: 0 24px;
+        scroll-snap-type: x mandatory;
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+
+    .products .mob_inline::-webkit-scrollbar
+    {
+        display: none !important;
+
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+
+    .products .mob_inline::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .products .mob_inline > *,
+    .products .mob_inline > *.small
+    {
+        display: inline-block;
+
+        width: 300px;
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+        white-space: normal;
+
+        scroll-snap-align: start;
+    }
+
+
+    .products .mob_inline > * + *,
+    .products .mob_inline > *.small + *.small
+    {
+        margin-left: 16px;
+    }
+
+
+    .products .product .thumb
+    {
+        margin-bottom: 0;
+    }
+
+    .products .mob_inline .product .thumb
+    {
+        margin-bottom: 16px;
+    }
+
+
+    .products .product .thumb .hover
+    {
+        font-size: var(--font_size);
+        line-height: 100%;
+    }
+
+
+    .products .product .name
+    {
+        font-size: var(--font_size);
+    }
+
+
+    .products .product .price
+    {
+        font-size: 20px;
+
+        margin-top: 0;
+    }
+
+
+    .products .mob_inline .product .price
+    {
+        margin-top: 8px;
+    }
+
+
+    .products .product .price .currency:after
+    {
+        left: -2px;
+
+        width: 6px;
+    }
+
+
+
+    /*--------------------
+        Master classes
+    --------------------*/
+    .master_classes .row > *
+    {
+        width: calc(50% - 20px);
+    }
+
+
+    .master_classes .item .date .day
+    {
+        font-size: 30px;
+
+        margin-top: 16px;
+    }
+
+
+
+    /*--------------------
+        Brands gallery
+    --------------------*/
+    .brands_gallery .item .icon
+    {
+        height: 64px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .map
+    {
+        order: 2;
+
+        width: 100%;
+        height: 440px;
+        margin-top: 40px;
+    }
+
+
+    .contacts_info .col
+    {
+        width: 100%;
+    }
+
+
+
+    /*----------------
+        Error info
+    ----------------*/
+    .error_info .cont
+    {
+        gap: 40px;
+    }
+
+
+    .error_info .title
+    {
+        line-height: 100%;
+    }
+
+
+
+    /*-------------------
+        Order success
+    -------------------*/
+    .order_success .cont
+    {
+        gap: 40px;
+    }
+
+
+    .order_success .title
+    {
+        line-height: 100%;
+    }
+
+
+
+    /*--------------
+        Checkout
+    --------------*/
+    .checkout .data
+    {
+        order: 2;
+
+        width: 100%;
+        margin-top: 40px;
+    }
+
+
+    .checkout .form .title
+    {
+        font-size: 18px;
+
+        margin-bottom: 24px;
+    }
+
+
+
+    .checkout .total_info
+    {
+        width: 100%;
+    }
+
+
+    .checkout .product
+    {
+        padding-right: 0;
+
+        gap: 20px;
+    }
+
+
+    .checkout .prices
+    {
+        padding-right: 0;
+
+        gap: 24px;
+    }
+
+
+    .checkout .total_price
+    {
+        font-size: 28px;
+
+        padding-right: 0;
+    }
+
+
+
+    /*---------------
+        Cart info
+    ---------------*/
+    .cart_info .list
+    {
+        gap: 24px;
+    }
+
+
+    .cart_info .product .thumb
+    {
+        width: 148px;
+        height: 148px;
+    }
+
+
+    .cart_info .product .info
+    {
+        width: calc(100% - 452px);
+    }
+
+
+    .cart_info .product .name
+    {
+        font-size: 18px;
+    }
+
+
+    .cart_info .product .total_price
+    {
+        font-size: 24px;
+    }
+
+
+    .cart_info .product .amount,
+    .cart_info .product .total_price,
+    .cart_info .product .remove_btn
+    {
+        margin-left: 24px;
+    }
+
+
+
+    .cart_info .total_info .products_price .val
+    {
+        font-size: 20px;
+    }
+
+
+    .cart_info .total_info .total_price
+    {
+        margin-top: 20px;
+    }
+
+
+    .cart_info .total_info .total_price .val
+    {
+        font-size: 32px;
+    }
+
+
+    .cart_info .total_info .total_price .currency:after
+    {
+        bottom: 10px;
+    }
+
+
+
+    /*-------------
+        MC info
+    -------------*/
+    .mc_info .images
+    {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+
+    .mc_info .images .controls
+    {
+        display: none;
+    }
+
+
+    .mc_info .images .image
+    {
+        border-radius: 20px;
+    }
+
+
+    .mc_info .data
+    {
+        width: 100%;
+
+        gap: 40px;
+    }
+
+
+    .mc_info .mc_name
+    {
+        font-size: 52px;
+
+        text-align: center;
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info .cont
+    {
+        gap: 40px;
+    }
+
+
+
+    /*----------------
+        Brand info
+    ----------------*/
+    .brand_info .slider
+    {
+        width: 600px;
+        margin-top: 40px;
+    }
+
+
+
+    /*--------------------
+        Products small
+    --------------------*/
+    .products_small .row
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        margin: 0 -24px;
+        padding: 0 24px;
+
+        white-space: nowrap;
+
+        scroll-padding: 0 24px;
+        scroll-snap-type: x mandatory;
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+
+    .products_small .row::-webkit-scrollbar
+    {
+        display: none !important;
+
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+
+    .products_small .row::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .products_small .row > *
+    {
+        display: inline-block;
+
+        width: 300px;
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+        white-space: normal;
+
+        scroll-snap-align: start;
+    }
+
+
+    .products_small .row > * + *
+    {
+        margin-left: 16px;
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .product_name
+    {
+        font-size: 52px;
+        line-height: 100%;
+    }
+
+
+    .product_info .price
+    {
+        font-size: 24px;
+
+        margin-top: 24px;
+    }
+
+
+    .product_info .variants
+    {
+        margin-top: 24px;
+    }
+
+
+    .product_info .variants .label
+    {
+        margin-bottom: 16px;
+    }
+
+
+    .product_info .variants .vals img
+    {
+        width: 32px;
+    }
+
+
+    .product_info .desc
+    {
+        margin-top: 24px;
+    }
+
+
+    .product_info .features .title
+    {
+        font-size: 36px;
+
+        margin-bottom: 20px;
+    }
+
+
+
+    /*----------------------
+        Mob. fixed panel
+    ----------------------*/
+    .mob_fixed_panel
+    {
+        display: flex;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        padding-bottom: 84px;
+    }
+
+
+    footer .col
+    {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+
+    footer .col + .links
+    {
+        margin: 0;
+    }
+
+
+    footer .links .items
+    {
+        min-width: 210px;
+
+        gap: 20px;
+    }
+
+
+
+    footer .contacts
+    {
+        margin-left: 0;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal
+    {
+        width: 620px;
+    }
+
+
+    .modal_title
+    {
+        font-size: 60px;
+    }
+}
